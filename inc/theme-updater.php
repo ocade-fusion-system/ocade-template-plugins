@@ -14,7 +14,7 @@ add_filter('site_transient_update_plugins', function ($transient) {
   $zip_url = $repo_url . '/releases/latest/download/' . $plugin_slug . '.zip';
 
   // Icônes dynamiques
-  $icon_base_url = $repo_url . '/master/assets/icons/';
+  $icon_base_url = 'https://raw.githubusercontent.com/' . $organisation_github . '/' . $plugin_slug . '/master/assets/icons/';
   $icons = [
     'svg'  => $icon_base_url . 'icon.svg',
     '1x'   => $icon_base_url . 'icon-1x.png',
